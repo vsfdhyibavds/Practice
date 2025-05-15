@@ -1,9 +1,11 @@
+total_students = 0
 class Student:
     def __init__(self, first_name, last_name,age, gender):
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
         self.gender = gender
+        Student.total_students += 1
 
         @property
         def email(self):
@@ -41,6 +43,7 @@ class Student:
 
 
             Student_1 = Student("John", "Doe", 23, "Male")
+            Student_2 = Student("Janee","Wong", 22, "Female")
+            Student_3 = Student("Alex ", "Wahome", 30, "Male")
 
-            print(Student_1)
-            print(Student_1.email)
+            #class variables and methods
